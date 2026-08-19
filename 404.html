@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>404 · Yusai</title>
+<meta name="robots" content="noindex"/>
+<link rel="icon" type="image/png" href="logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap"/>
+<style>
+:root{
+  --bg:#0a0a0f; --bg2:#12121a; --bg3:#1a1a26; --border:#ffffff0f;
+  --text:#e8e8f0; --muted:#6b6b88; --accent:#7c6aff; --accent2:#00e5b4;
+  --font-display:'Space Grotesk',sans-serif; --font-mono:'JetBrains Mono',monospace;
+  --glow:0 0 40px #7c6aff22;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--font-display);
+  display:flex;align-items:center;justify-content:center;padding:24px;
+  position:relative;overflow:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:radial-gradient(2px 2px at 20px 30px, var(--accent2)15, transparent),
+    radial-gradient(1px 1px at 40px 70px, var(--accent)20, transparent);
+  background-size:200px 200px;opacity:.3;pointer-events:none;
+}
+.wrap{max-width:520px;text-align:center;position:relative;z-index:1}
+.logo-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:28px;opacity:.7}
+.logo-row img{width:22px;height:22px;border-radius:6px}
+.logo-row span{font-family:var(--font-mono);font-size:.85rem;letter-spacing:.1em;color:var(--accent)}
+.code{
+  font-size:clamp(4rem,18vw,7rem);font-weight:700;line-height:1;letter-spacing:-.03em;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:12px;
+}
+.tag{
+  font-family:var(--font-mono);font-size:.78rem;color:var(--accent2);
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px;
+}
+.msg{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:32px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+a.btn{
+  padding:12px 28px;border-radius:99px;font-size:.9rem;font-weight:600;
+  transition:transform .2s,box-shadow .2s,border-color .2s;text-decoration:none;
+}
+a.btn.primary{background:var(--accent);color:#fff;box-shadow:var(--glow)}
+a.btn.primary:hover{transform:translateY(-2px);box-shadow:0 0 60px #7c6aff44}
+a.btn.ghost{border:1px solid var(--border);color:var(--muted)}
+a.btn.ghost:hover{border-color:var(--accent);color:var(--text)}
+.hint{margin-top:40px;font-family:var(--font-mono);font-size:.72rem;color:var(--muted);opacity:.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo-row">
+    <img src="logo.png" alt="" onerror="this.style.display='none'"/>
+    <span>⌁ gityus13</span>
+  </div>
+  <div class="code">404</div>
+  <div class="tag">Route not found</div>
+  <p class="msg">This page doesn't exist — probably a bad link, a renamed repo, or a typo. Nothing's broken on the server side.</p>
+  <div class="actions">
+    <a class="btn primary" href="/">Back home</a>
+    <a class="btn ghost" href="https://github.com/Gityus13" target="_blank">GitHub →</a>
+  </div>
+  <div class="hint">// TODO: if this file isn't at the site root, GitHub Pages won't serve it automatically for 404s</div>
+</div>
+</body>
+</html>
