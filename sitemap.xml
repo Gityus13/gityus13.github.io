@@ -6,4 +6,30 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://gityus13.github.io/pulse-news/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gityus13.github.io/LexiLabs/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://github.com/Gityus13/pipanel</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://github.com/Gityus13/restaurant-pos</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://github.com/Gityus13/Local-Whatsapp</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://github.com/Gityus13/jarvis</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
