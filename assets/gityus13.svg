@@ -1,0 +1,96 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1000" height="260" viewBox="0 0 1000 260">
+
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8d8d8"/>
+      <stop offset=".5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#666666"/>
+    </linearGradient>
+
+    <linearGradient id="softLight">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="letters">
+      <text x="500" y="125" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="72" font-weight="600"
+        letter-spacing="13">GITYUS13</text>
+    </clipPath>
+  </defs>
+
+  <!-- Entire signature is clickable -->
+  <a xlink:href="https://gityus13.dev"
+     href="https://gityus13.dev"
+     target="_blank">
+
+    <rect width="1000" height="260" fill="#080808"/>
+
+    <!-- Top label -->
+    <text x="500" y="49" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="10" letter-spacing="5"
+      fill="#666">PERSONAL TECHNOLOGY BRAND</text>
+
+    <!-- Main wordmark depth -->
+    <text x="500" y="130" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="72" font-weight="600"
+      letter-spacing="13" fill="#292929">GITYUS13</text>
+
+    <text x="500" y="125" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="72" font-weight="600"
+      letter-spacing="13" fill="url(#silver)">GITYUS13</text>
+
+    <!-- Subtle moving reflection -->
+    <g clip-path="url(#letters)">
+      <rect x="-200" y="35" width="110" height="105"
+        fill="url(#softLight)" transform="skewX(-20)">
+        <animate attributeName="x"
+          values="-200;1100"
+          dur="8s"
+          repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Divider -->
+    <line x1="270" y1="157" x2="730" y2="157"
+      stroke="#303030" stroke-width="1"/>
+
+    <line x1="270" y1="157" x2="350" y2="157"
+      stroke="#888" stroke-width="1" opacity=".7">
+      <animate attributeName="x1"
+        values="270;650;270"
+        dur="10s"
+        repeatCount="indefinite"/>
+      <animate attributeName="x2"
+        values="350;730;350"
+        dur="10s"
+        repeatCount="indefinite"/>
+    </line>
+
+    <!-- Subtitle -->
+    <text x="500" y="187" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="12" letter-spacing="4"
+      fill="#b0b0b0">INDEPENDENT DEVELOPER</text>
+
+    <!-- Footer -->
+    <text x="270" y="222"
+      font-family="monospace"
+      font-size="9" letter-spacing="2"
+      fill="#555">SOFTWARE / DESIGN / TECHNOLOGY</text>
+
+    <text x="730" y="222" text-anchor="end"
+      font-family="monospace"
+      font-size="9" letter-spacing="2"
+      fill="#555">EST. 2024</text>
+
+  </a>
+</svg>
