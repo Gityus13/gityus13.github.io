@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://gityus13.dev">
-  <img src="assets/readme-header.svg" width="1000" alt="Gityus13. Clean engineering. Practical solutions.">
+  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/readme-header.svg" width="100%">
 </a>
 
 <br/>
@@ -32,7 +32,7 @@ Developer based in Baku, Azerbaijan, building web applications, software tools, 
 This repository is the source of my portfolio at [gityus13.dev](https://gityus13.dev).
 
 <div align="center">
-  <img src="assets/readme-stack.svg" width="1000" alt="Technology stack">
+  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/readme-stack.svg" width="100%">
 </div>
 
 ## The site
