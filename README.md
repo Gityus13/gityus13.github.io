@@ -1,233 +1,156 @@
 <div align="center">
 
-  <!-- Animated Typing Header -->
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=25&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=435&lines=HI+I+AM+GITYUS13;FULL+STACK+DEVELOPER;OPE+NSOURCE+BUILDER;GITHUB+DEVELOPER+PROGRAM+MEMBER)](https://git.io/typing-svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-on-dark.png">
+  <img src="docs/logo-on-light.png" alt="Gityus13" width="120">
+</picture>
 
-  <br/>
+<h1>Gityus13</h1>
 
-  <!-- Profile Avatar -->
-  <img src="https://avatars.githubusercontent.com/u/207548440?v=4" width="120" style="border-radius: 50%;" alt="Gityus13 Avatar" />
+<p>
+  Developer building web applications, software tools, and hardware projects.<br/>
+  A portfolio site that builds itself from the GitHub API.
+</p>
 
-  <h3>🚀 Yusai — Full-Stack Developer & Hardware Hacker</h3>
-  <p><em>Building Iron Man HUDs, Arduino gadgets, open-source CLIs, and anything that shouldn't exist.</em></p>
+<p>
+  <a href="https://gityus13.dev"><b>Live site</b></a>
+  &ensp;/&ensp;
+  <a href="#features">Features</a>
+  &ensp;/&ensp;
+  <a href="#getting-started">Getting started</a>
+  &ensp;/&ensp;
+  <a href="#configuration">Configuration</a>
+</p>
 
-  <!-- Badges Row -->
-  <p>
-    <a href="https://gityus13.dev/">
-      <img src="https://img.shields.io/badge/🌐_Live_Site-gityus13.dev-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Site" />
-    </a>
-    <a href="https://github.com/Gityus13">
-      <img src="https://img.shields.io/badge/GitHub-Gityus13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-    <a href="https://djyusif.com">
-      <img src="https://img.shields.io/badge/🎧_Blog-djyusif.com-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Blog" />
-    </a>
-  </p>
-
-  <!-- Social & Stats Badges -->
-  <p>
-    <img src="https://img.shields.io/badge/📍-Azerbaijan-0099CC?style=flat-square" alt="Location" />
-    <img src="https://img.shields.io/badge/🏢-YUSAI-FF6B6B?style=flat-square" alt="Company" />
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License" />
-    <img src="https://img.shields.io/badge/Platform-GitHub%20Pages-222222?style=flat-square&logo=githubpages" alt="Platform" />
-  </p>
-
-  <!-- GitHub Stats -->
-  <p>
-    <img src="https://img.shields.io/badge/Public_Repos-43-blue?style=flat-square&logo=github" alt="Public Repos" />
-    <img src="https://img.shields.io/badge/Followers-4-green?style=flat-square&logo=github" alt="Followers" />
-    <img src="https://img.shields.io/badge/Following-4-orange?style=flat-square&logo=github" alt="Following" />
-  </p>
+<p>
+  <a href="https://gityus13.dev"><img alt="Website status" src="https://img.shields.io/website?url=https%3A%2F%2Fgityus13.dev&up_message=online&down_message=offline&label=gityus13.dev&style=flat-square&labelColor=171a20&up_color=c4cbd4&down_color=ff6b6b"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/Gityus13/gityus13.github.io?style=flat-square&labelColor=171a20&color=c4cbd4"></a>
+  <a href="https://github.com/Gityus13/gityus13.github.io/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/Gityus13/gityus13.github.io?style=flat-square&labelColor=171a20&color=c4cbd4"></a>
+</p>
 
 </div>
 
----
+<br/>
 
-## 📋 Table of Contents
+## Overview
 
-- [🎯 About](#-about)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [🚀 Deployment](#-deployment)
-- [🔥 Featured Projects](#-featured-projects)
-- [📊 GitHub Stats](#-github-stats)
-- [🤝 Connect](#-connect)
-- [📄 License](#-license)
+This repository is the source of [gityus13.dev](https://gityus13.dev). It is a single static page with no build step and no backend. On load, the page reads the public profile and repositories of a GitHub account and renders them as a searchable, filterable portfolio, so the site stays current without manual edits.
 
----
+## Features
 
-## 🎯 About
+| Area | Details |
+| :-- | :-- |
+| **Repository grid** | Every public repository with description, primary language, stars, forks, topics, and time of last push. |
+| **Search, sort, filter** | Free-text search across names, descriptions, and topics. Six sort orders. Filters for original work, forks, archived repositories, repositories with a live site, and individual languages. |
+| **Pinned projects** | Repositories whose names match the `PINNED` list are sorted first and marked as featured. |
+| **Repository detail** | A modal with repository statistics, topics, license, default branch, and a one-click copy of the clone command. |
+| **Language breakdown** | Share of repositories by primary language. |
+| **Push activity** | A 26-week grid showing the days on which repositories were last pushed to. |
+| **Light and dark themes** | The choice is remembered and applied before first paint, so there is no flash. |
+| **Motion** | Entrance animation, scroll reveals, card tilt, and magnetic buttons via GSAP. All of it is skipped when the visitor has `prefers-reduced-motion` enabled. |
+| **Resilience** | Responses are cached locally. If the API is rate limited or unreachable, the page falls back to saved data and says so. |
+| **Responsive layout** | Designed from small phones to wide desktops, with navigation available at every width. |
+| **Custom 404** | A branded error page that matches the main design. |
 
-This repository powers my personal **GitHub Pages portfolio** — a dynamic, auto-synced developer profile that showcases my projects, contribution activity, language breakdowns, and real-time GitHub stats.
+## How it works
 
-> **"BUILDING STUFF"** — that's the motto. From full-stack web apps to hardware prototypes, this portfolio is the central hub for everything I create.
-
-🌐 **Live URL:** [https://gityus13.dev](https://gityus13.dev)
-
----
-
-## ✨ Features
-
-| Feature | Description | Icon |
-|---------|-------------|------|
-| **🔐 Developer Profile** | Auto-synced GitHub bio, avatar, and availability status | 👤 |
-| **📦 Projects Showcase** | Live repository grid with stars, forks, and language tags | 📦 |
-| **📊 Language Breakdown** | Visual stats of coding languages across all repos | 📈 |
-| **🔥 Contribution Activity** | Grid of recent pushes across your repositories | 🔥 |
-| **🔍 Filter & Search** | Search through repositories dynamically | 🔍 |
-| **🎨 Responsive Design** | Fully mobile-optimized layout | 📱 |
-| **⚡ Fast Loading** | Static HTML with zero backend dependencies | ⚡ |
-| **🤖 404 Page** | Custom themed error page for broken links | 🚫 |
-
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages" />
-  <img src="https://img.shields.io/badge/GitHub%20API-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API" />
-</p>
-
----
-
-## 📁 Project Structure
-
+```mermaid
+flowchart LR
+    A([Visitor]) --> B[Load index.html]
+    B --> C{Saved data under<br/>10 minutes old?}
+    C -- Yes --> D[Render from localStorage]
+    C -- No --> E[Fetch GitHub REST API]
+    E -- Success --> F[Render and refresh cache]
+    E -- Rate limited or offline --> G{Any saved data?}
+    G -- Yes --> D
+    G -- No --> H[Show error state]
 ```
-gityus13.github.io/
-├── index.html                     # Main portfolio page
-├── 404.html                       # Custom 404 page
-├── logo.png                       # Logo + favicon
-├── gityus13.svg                   # Wordmark
-├── CNAME                          # Custom domain (gityus13.dev)
-├── robots.txt / sitemap.xml       # SEO
-├── google915ed6b5aa6c42dd.html    # Search Console verification
-├── LICENSE                        # MIT
+
+Unauthenticated GitHub API requests are limited to 60 per hour per IP address. The 10-minute cache keeps ordinary browsing well under that limit. Older saved data is shown immediately while a fresh request runs in the background.
+
+## Tech stack
+
+| Layer | Technology |
+| :-- | :-- |
+| Markup and styling | HTML5, CSS3 with custom properties for theming |
+| Logic | Vanilla JavaScript, no framework and no bundler |
+| Data | GitHub REST API v3 |
+| Animation | GSAP 3.14.2 and ScrollTrigger, loaded from jsDelivr |
+| Typography | Inter, Space Grotesk, JetBrains Mono via Google Fonts |
+| Hosting | GitHub Pages with a custom domain |
+
+## Getting started
+
+There is nothing to install. Clone the repository and serve the folder with any static file server:
+
+```bash
+git clone https://github.com/Gityus13/gityus13.github.io.git
+cd gityus13.github.io
+python3 -m http.server 8000
+```
+
+Open <http://localhost:8000>. GSAP and fonts load from CDNs, so animations and web fonts need a network connection. The page remains fully usable without them.
+
+## Configuration
+
+Everything you are likely to change sits at the top of the main `<script>` block in `index.html`.
+
+| Constant | Default | Purpose |
+| :-- | :-- | :-- |
+| `USERNAME` | `'Gityus13'` | GitHub account whose profile and repositories are displayed. |
+| `PINNED` | `['jarvis', 'stacklens', 'repoask']` | Name fragments, case-insensitive. Matching repositories are featured and sorted first. |
+| `EXCLUDE` | `[]` | Exact repository names to hide from the grid. |
+| `PAGE_SIZE` | `12` | Repositories shown before the Load more button. |
+
+The hero biography, avatar, location, and website link are read from the GitHub profile. To change them, edit the profile on GitHub.
+
+## Project structure
+
+```text
+.
+├── index.html                    Portfolio page: markup, styles, and scripts
+├── 404.html                      Custom error page
+├── logo.png                      Site logo and favicon
+├── gityus13.svg                  Wordmark
+├── docs/
+│   ├── logo-on-dark.png          README header logo for dark themes
+│   └── logo-on-light.png         README header logo for light themes
+├── CNAME                         Custom domain: gityus13.dev
+├── robots.txt                    Crawler rules
+├── sitemap.xml                   Sitemap
+├── google915ed6b5aa6c42dd.html   Search Console ownership file, do not remove
+├── LICENSE                       MIT
 └── README.md
 ```
 
----
+## Deployment
 
-## 🚀 Deployment
+The site is served by GitHub Pages from the root of the `main` branch. Pushing to `main` publishes the change, usually within a minute.
 
-This site is automatically deployed via **GitHub Pages** from the `main` branch.
+- **Domain.** The `CNAME` file sets `gityus13.dev`. DNS for that domain must point to GitHub Pages, and HTTPS can be enforced under Settings, then Pages.
+- **Search.** `index.html` declares a canonical URL. `robots.txt` points crawlers to `sitemap.xml`, which should be updated whenever a new project page is published under the domain.
 
-### How to Update
+## Selected work
 
-1. Edit `index.html` locally or directly on GitHub
-2. Commit and push to `main`
-3. Changes go live within **~30 seconds** at `https://gityus13.dev`
+The live site lists every repository. A few representative ones:
 
-```bash
-# Clone the repo
-git clone https://github.com/Gityus13/gityus13.github.io.git
+| Project | Language | Description |
+| :-- | :-- | :-- |
+| [Jarvis](https://github.com/Gityus13/jarvis) | JavaScript | Personal AI assistant |
+| [PiPanel](https://github.com/Gityus13/pipanel) | JavaScript | Raspberry Pi control dashboard |
+| [Pulse News](https://github.com/Gityus13/pulse-news) | HTML | News aggregation platform |
+| [Cipher Lang](https://github.com/Gityus13/cipher-lang) | HTML | Custom cipher language tool |
+| [DJ Yusif](https://github.com/Gityus13/djyusif) | HTML | Website and booking for [djyusif.com](https://djyusif.com) |
+| [FoodServ.az](https://github.com/Gityus13/foodserv.az) | HTML | Food service platform |
 
-# Make your changes
-cd gityus13.github.io
-# ... edit files ...
+## Contact
 
-# Push to deploy
-git add .
-git commit -m "🚀 Update portfolio"
-git push origin main
-```
+Based in Baku, Azerbaijan.
 
----
+- GitHub: [@Gityus13](https://github.com/Gityus13)
+- Website: [djyusif.com](https://djyusif.com)
+- Issues and suggestions: [open an issue](https://github.com/Gityus13/gityus13.github.io/issues)
 
-## 🔥 Featured Projects
+## License
 
-Here are some highlighted repositories from my collection of **43 public repos**:
-
-| Project | Language | Description | Link |
-|---------|----------|-------------|------|
-| **🤖 Jarvis** | JavaScript | Personal AI assistant project | [View](https://github.com/Gityus13/jarvis) |
-| **🎮 AICraft** | Java | AI-powered crafting/game engine | [View](https://github.com/Gityus13/AICraft) |
-| **🖥️ PiPanel** | JavaScript | Raspberry Pi control dashboard | [View](https://github.com/Gityus13/pipanel) |
-| **🛡️ Ollama Hacker** | Python | Local LLM hacking toolkit | [View](https://github.com/Gityus13/ollama-hacker) |
-| **🎧 DJ Yusif** | HTML | Official DJ website & booking | [View](https://github.com/Gityus13/djyusif) |
-| **🍔 FoodServ.az** | HTML | Food service platform | [View](https://github.com/Gityus13/foodserv.az) |
-| **🏎️ Formula** | HTML | Formula Cars showcase | [View](https://github.com/Gityus13/Formula) |
-| **📰 Pulse News** | HTML | News aggregation platform | [View](https://github.com/Gityus13/pulse-news) |
-| **🔐 Cipher Lang** | HTML | Custom cipher language tool | [View](https://github.com/Gityus13/cipher-lang) |
-| **🌐 CSCLLC** | JavaScript | Corporate business site | [View](https://github.com/Gityus13/cscllc) |
-
-> 🔗 **View all 43 repositories:** [github.com/Gityus13?tab=repositories](https://github.com/Gityus13?tab=repositories)
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-  <!-- GitHub Readme Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Gityus13&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=00D4FF&text_color=FFFFFF" alt="GitHub Stats" width="48%" />
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gityus13&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF" alt="Top Languages" width="48%" />
-
-  <br/><br/>
-
-  <!-- Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gityus13&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D4FF&ring=00D4FF&fire=FF6B6B&currStreakLabel=00D4FF" alt="GitHub Streak" width="70%" />
-
-  <br/><br/>
-
-  <!-- Activity Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gityus13&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D4FF&line=00D4FF&point=FF6B6B" alt="Activity Graph" width="90%" />
-
-</div>
-
----
-
-## 🤝 Connect
-
-<p align="center">
-  <a href="https://github.com/Gityus13">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="https://djyusif.com">
-    <img src="https://img.shields.io/badge/Website-djyusif.com-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
-  </a>
-  <a href="https://gityus13.dev">
-    <img src="https://img.shields.io/badge/Portfolio-gityus13.dev-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Gityus13&style=flat-square&color=00D4FF" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Made%20with%20❤️%20in-Azerbaijan-0099CC?style=flat-square" alt="Made in Azerbaijan" />
-</p>
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025-2026 Gityus13 (Yusai)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
----
-
-<div align="center">
-
-  **⭐ Star this repo if you like the portfolio design!**
-
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00D4FF&height=100&section=footer&animation=fadeIn" alt="Footer Wave" />
-
-</div>
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Gityus13.
