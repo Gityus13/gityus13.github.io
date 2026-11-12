@@ -13,8 +13,8 @@
 
   <!-- Badges Row -->
   <p>
-    <a href="https://gityus13.github.io/">
-      <img src="https://img.shields.io/badge/🌐_Live_Site-gityus13.github.io-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Site" />
+    <a href="https://gityus13.dev/">
+      <img src="https://img.shields.io/badge/🌐_Live_Site-gityus13.dev-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Site" />
     </a>
     <a href="https://github.com/Gityus13">
       <img src="https://img.shields.io/badge/GitHub-Gityus13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -63,7 +63,7 @@ This repository powers my personal **GitHub Pages portfolio** — a dynamic, aut
 
 > **"BUILDING STUFF"** — that's the motto. From full-stack web apps to hardware prototypes, this portfolio is the central hub for everything I create.
 
-🌐 **Live URL:** [https://gityus13.github.io](https://gityus13.github.io)
+🌐 **Live URL:** [https://gityus13.dev](https://gityus13.dev)
 
 ---
 
@@ -74,7 +74,7 @@ This repository powers my personal **GitHub Pages portfolio** — a dynamic, aut
 | **🔐 Developer Profile** | Auto-synced GitHub bio, avatar, and availability status | 👤 |
 | **📦 Projects Showcase** | Live repository grid with stars, forks, and language tags | 📦 |
 | **📊 Language Breakdown** | Visual stats of coding languages across all repos | 📈 |
-| **🔥 Contribution Activity** | Real-time commit graph and contribution streaks | 🔥 |
+| **🔥 Contribution Activity** | Grid of recent pushes across your repositories | 🔥 |
 | **🔍 Filter & Search** | Search through repositories dynamically | 🔍 |
 | **🎨 Responsive Design** | Fully mobile-optimized layout | 📱 |
 | **⚡ Fast Loading** | Static HTML with zero backend dependencies | ⚡ |
@@ -98,13 +98,15 @@ This repository powers my personal **GitHub Pages portfolio** — a dynamic, aut
 
 ```
 gityus13.github.io/
-├── 📄 index.html          # Main portfolio page (~54KB)
-├── 🚫 404.html            # Custom 404 error page
-├── 🖼️ favicon.png         # Site favicon
-├── 🤖 robots.txt          # Search engine crawler rules
-├── 🗺️ sitemap.xml         # SEO sitemap
-├── 📜 LICENSE             # MIT License
-└── 📖 README.md           # This file
+├── index.html                     # Main portfolio page
+├── 404.html                       # Custom 404 page
+├── logo.png                       # Logo + favicon
+├── gityus13.svg                   # Wordmark
+├── CNAME                          # Custom domain (gityus13.dev)
+├── robots.txt / sitemap.xml       # SEO
+├── google915ed6b5aa6c42dd.html    # Search Console verification
+├── LICENSE                        # MIT
+└── README.md
 ```
 
 ---
@@ -117,7 +119,7 @@ This site is automatically deployed via **GitHub Pages** from the `main` branch.
 
 1. Edit `index.html` locally or directly on GitHub
 2. Commit and push to `main`
-3. Changes go live within **~30 seconds** at `https://gityus13.github.io`
+3. Changes go live within **~30 seconds** at `https://gityus13.dev`
 
 ```bash
 # Clone the repo
@@ -188,8 +190,8 @@ Here are some highlighted repositories from my collection of **43 public repos**
   <a href="https://djyusif.com">
     <img src="https://img.shields.io/badge/Website-djyusif.com-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
   </a>
-  <a href="https://gityus13.github.io">
-    <img src="https://img.shields.io/badge/Portfolio-gityus13.github.io-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" />
+  <a href="https://gityus13.dev">
+    <img src="https://img.shields.io/badge/Portfolio-gityus13.dev-00D4FF?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" />
   </a>
 </p>
 

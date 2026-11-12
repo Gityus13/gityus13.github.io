@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>404 · Yusai</title>
+<title>404 · Gityus13</title>
 <meta name="robots" content="noindex"/>
-<link rel="icon" type="image/png" href="logo.png"/>
+<link rel="icon" type="image/png" href="/logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap"/>
 <style>
 :root{
-  --bg:#0a0a0f; --bg2:#12121a; --bg3:#1a1a26; --border:#ffffff0f;
-  --text:#e8e8f0; --muted:#6b6b88; --accent:#7c6aff; --accent2:#00e5b4;
+  --bg:#08090b; --bg2:#101216; --bg3:#171a20; --border:rgba(210,220,235,.13);
+  --text:#e8e8f0; --muted:#6b6b88; --accent:#c4cbd4; --accent2:#858b96;
   --font-display:'Space Grotesk',sans-serif; --font-mono:'JetBrains Mono',monospace;
-  --glow:0 0 40px #7c6aff22;
+  --glow:none;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
@@ -53,12 +53,16 @@ a.btn.primary:hover{transform:translateY(-2px);box-shadow:0 0 60px #7c6aff44}
 a.btn.ghost{border:1px solid var(--border);color:var(--muted)}
 a.btn.ghost:hover{border-color:var(--accent);color:var(--text)}
 .hint{margin-top:40px;font-family:var(--font-mono);font-size:.72rem;color:var(--muted);opacity:.6}
+body::before{background-image:radial-gradient(ellipse at 50% -20%,rgba(170,185,205,.12),transparent 45%);background-size:auto;opacity:1}
+a.btn.primary{background:#fff;color:#08090b}
+a.btn.primary:hover{box-shadow:none;background:#d4d4d4}
+a.btn.ghost:hover{border-color:#737373}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="logo-row">
-    <img src="logo.png" alt="" onerror="this.style.display='none'"/>
+    <img src="/logo.png" alt="" onerror="this.style.display='none'"/>
     <span>⌁ gityus13</span>
   </div>
   <div class="code">404</div>
@@ -68,7 +72,6 @@ a.btn.ghost:hover{border-color:var(--accent);color:var(--text)}
     <a class="btn primary" href="/">Back home</a>
     <a class="btn ghost" href="https://github.com/Gityus13" target="_blank">GitHub →</a>
   </div>
-  <div class="hint">// TODO: if this file isn't at the site root, GitHub Pages won't serve it automatically for 404s</div>
 </div>
 </body>
 </html>
