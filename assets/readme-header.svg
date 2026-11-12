@@ -7,7 +7,11 @@
       <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="headline">
-      <text x="44" y="116" textLength="684" lengthAdjust="spacing" font-family="Arial, Helvetica, sans-serif" font-size="42" letter-spacing="-.6">Clean engineering. Practical solutions.</text>
+      <text x="44" y="116"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="42"
+      font-weight="700"
+      fill="url(#face)">Clean engineering. Practical solutions.</text>
     </clipPath>
   </defs>
 
