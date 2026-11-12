@@ -65,7 +65,7 @@ The live site lists every repository. A few representative ones:
 
 - GitHub: [@Gityus13](https://github.com/Gityus13)
 - Website: [gityus13.dev](https://gityus13.dev)
-- Other: [djyusif.com](https://djyusif.com)
+- Other: [dev.to](https://dev.to/gityus13)
 
 ## License
 
