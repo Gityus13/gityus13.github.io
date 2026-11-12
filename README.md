@@ -1,7 +1,7 @@
-<div align="center">
+ <div align="center">
 
 <a href="https://gityus13.dev">
-  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/readme-header.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/gityus13.svg" width="100%" alt="GITYUS13">
 </a>
 
 <br/>
@@ -32,7 +32,7 @@ Developer based in Baku, Azerbaijan, building web applications, software tools, 
 This repository is the source of my portfolio at [gityus13.dev](https://gityus13.dev).
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/readme-stack.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/Gityus13/gityus13.github.io/main/assets/readme-stack.svg" width="100%" alt="Technology stack">
 </div>
 
 ## The site
@@ -70,13 +70,3 @@ The live site lists every repository. A few representative ones:
 ## License
 
 Released under the [MIT License](LICENSE). Copyright (c) 2026 Gityus13.
-
-<br/>
-
-<div align="center">
-  <a href="https://gityus13.dev">
-    <img src="https://gityus13.github.io/assets/gityus13.svg?raw=true"
-         width="100%"
-         alt="GITYUS13"/>
-  </a>
-</div>
