@@ -16,6 +16,7 @@
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
 /* ─── TOKENS ──────────────────────────────────────────────────── */
 :root{
@@ -1657,6 +1658,39 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
   .repo-card:hover{translate:none}
   #progress{transition:none}
 }
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 17px;
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-btn i {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+}
+
 </style>
 </head>
 <body>
@@ -1694,9 +1728,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
     <div class="stat"><span class="stat-val" id="statForks">—</span><span class="stat-label">Forks</span></div>
     <div class="stat"><span class="stat-val" id="statFollowers">—</span><span class="stat-label">Followers</span></div>
   </div>
-  <div class="hero-actions">
-    <a class="btn-primary" href="https://github.com/Gityus13" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-  </div>
+ 
+<div class="social-links">
+    <a href="https://github.com/Gityus13" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://dev.to/gityus13" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="DEV Community">
+        <i class="fa-brands fa-dev"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yusif_gurbanzade/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@Gityus13" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://discord.com/users/1436814662242009169" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Discord">
+        <i class="fa-brands fa-discord"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/gityus13/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:yusif.kurba@gmail.com" class="social-btn" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
 </section>
 
 <!-- COMMIT TICKER -->
@@ -1788,8 +1849,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
     <span id="footerTime" style="opacity:.6"></span>
   </div>
   <div class="footer-socials">
-    <a class="social-btn" href="https://github.com/Gityus13" target="_blank" rel="noopener noreferrer" title="GitHub">⌁</a>
-  </div>
+    <a class="social-btn" href="https://github.com/Gityus13" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a class="social-btn" href="https://dev.to/gityus13" target="_blank" rel="noopener noreferrer" title="DEV" aria-label="DEV"><i class="fa-brands fa-dev"></i></a>
+    <a class="social-btn" href="https://www.instagram.com/yusif_gurbanzade/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="social-btn" href="https://www.youtube.com/@Gityus13" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a class="social-btn" href="https://discord.com/users/1436814662242009169" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    <a class="social-btn" href="https://www.linkedin.com/in/gityus13/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="social-btn" href="mailto:yusif.kurba@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+</div>
+
 </footer>
 
 <!-- BACK TO TOP -->
